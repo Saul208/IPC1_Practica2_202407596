@@ -1,6 +1,7 @@
 package USACProcessingData.Model;
 
-import java.util.*;
+import java.util.Collections;
+import java.util.List;
 
 public class Sorter {
 
@@ -12,6 +13,10 @@ public class Sorter {
 
     public void resetSteps() {
         steps = 0;
+    }
+    
+    public void incrementStep() {
+        steps++;
     }
 
     public void bubbleSort(List<DataEntry> data, boolean ascending) {
@@ -29,6 +34,4 @@ public class Sorter {
             }
         }
     }
-
-    // Más algoritmos aquí luego...
 }
